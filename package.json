@@ -1,9 +1,11 @@
 {
-  "name": "auto-config",
+  "name": "linting-generator",
   "version": "1.0.0",
   "description": "CLI to generate eslint, typescript config with prettier for react and nodejs",
   "main": "src/index.js",
-  "bin": "src/index.js",
+  "bin": {
+    "linting-generator": "src/index.js"
+  },
   "scripts": {
     "start": "node src/index.js"
   },
@@ -22,13 +24,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HashemKhalifa/auto-config.git"
+    "url": "git+https://github.com/HashemKhalifa/linting-generator.git"
   },
   "bugs": {
-    "url": "https://github.com/HashemKhalifa/auto-config/issues"
+    "url": "https://github.com/HashemKhalifa/linting-generator/issues"
   },
-  "homepage": "https://github.com/HashemKhalifa/auto-config#readme",
+  "homepage": "https://github.com/HashemKhalifa/linting-generator#readme",
   "dependencies": {
     "inquirer": "^7.3.3"
-  }
+  },
+  "devDependencies": {}
 }
