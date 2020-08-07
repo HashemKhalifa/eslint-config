@@ -1,0 +1,23 @@
+{
+  "name": "auto-config",
+  "version": "1.0.0",
+  "description": "CLI to generate eslint, typescript config with prettier for react and nodejs",
+  "main": "src/index.js",
+  "bin": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Hashem Khalifa",
+  "email": "<hashem.khalifa@gmail.com>",
+  "keywords": [
+    "eslint",
+    "tsconfig",
+    "nodejs",
+    "eslint",
+    "ts"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
