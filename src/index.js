@@ -18,7 +18,7 @@ const configPromot = {
     name: "eslint",
     message:
         "Please pick your favoriate eslint configuration along with prettier!",
-    choices: ["React", "Typescript", "NodeJS"]
+    choices: ["React", "Typescript", "NodeJS"],
     filter: function (val) {
         return val.toLowerCase();
     },
