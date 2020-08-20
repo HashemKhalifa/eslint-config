@@ -58,7 +58,7 @@ function reactConfig() {
       writeFileSync(cwd + "/.eslintrc", choice);
       writeFileSync(cwd + "/.prettierrc", JSON.stringify(prettierConfig));
       console.log(
-        "\x1b[35m",
+        "\x1b[32m",
         `🎉 🎉 Eslint and prettier config successfully generated for ${react} 🎉 🎉 `
       );
     }

@@ -50,3 +50,5 @@ yarn-error.log
 
 # vscode
 .vscode
+.eslintrc
+.prettierrc
