@@ -69,7 +69,7 @@ function typeScriptConfig() {
             console.log("==== Will be added to the next version ======");
         } else {
             const cwd = process.cwd();
-            console.log("==== Installing dependencies");
+            console.log("==== Installing dependencies ====== ");
             shell.exec('yarn add --dev typescript')
             shell.exec('yarn add --dev @typescript-eslint/parser')
             shell.exec('yarn add --dev prettier')
@@ -92,7 +92,16 @@ function reactConfig() {
             console.log("==== Will be added to the next version ======");
         } else {
             const cwd = process.cwd();
-
+            console.log("==== Installing dependencies ====== ");
+            shell.exec('yarn add --dev eslint')
+            shell.exec('yarn add --dev eslint-config-airbnb')
+            shell.exec('yarn add --dev prettier')
+            shell.exec('yarn add --dev babel-eslint')
+            shell.exec('yarn add --dev eslint-plugin-react')
+            shell.exec('yarn add --dev eslint-plugin-import')
+            shell.exec('yarn add --dev eslint-plugin-jsx-a11y')
+            shell.exec('yarn add --dev eslint-config-prettier')
+            shell.exec('yarn add --dev eslint-plugin-react-hooks')
             writeFileSync(cwd + "/.eslintrc", choice);
             writeFileSync(cwd + "/.prettierrc", JSON.stringify(prettierConfig));
             console.log(

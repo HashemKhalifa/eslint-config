@@ -31,7 +31,8 @@
   },
   "homepage": "https://github.com/HashemKhalifa/linting-generator#readme",
   "dependencies": {
-    "inquirer": "^7.3.3"
+    "inquirer": "^7.3.3",
+    "shelljs": "0.8.4"
   },
   "devDependencies": {}
 }
