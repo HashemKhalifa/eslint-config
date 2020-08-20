@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 const inquirer = require("inquirer");
 const { writeFileSync } = require("fs");
+const shell = require('shelljs');
+
 const reactAirbnbConfing = require("../config/react-with-airbnb-config.json");
 const tsLintConfig = require("../config/ts-eslint")
 const tsconfig = require("../config/ts-without-style-guide.json")
@@ -67,7 +69,10 @@ function typeScriptConfig() {
             console.log("==== Will be added to the next version ======");
         } else {
             const cwd = process.cwd();
-
+            console.log("==== Installing dependencies");
+            shell.exec('yarn add --dev typescript')
+            shell.exec('yarn add --dev @typescript-eslint/parser')
+            shell.exec('yarn add --dev prettier')
             writeFileSync(cwd + "/.eslintrc", JSON.stringify(tsLintConfig));
             writeFileSync(cwd + "/.prettierrc", JSON.stringify(prettierConfig));
             writeFileSync(cwd + "/tsconfig.json", choice);
