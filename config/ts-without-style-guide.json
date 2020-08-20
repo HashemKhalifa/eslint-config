@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "declaration": true,
+        "declarationMap": true,
+        "removeComments": false,
+        "noLib": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "target": "es5",
+        "lib": [
+              "es2020",
+              "dom"
+        ],
+
+
+        "noImplicitAny": true,
+
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+
+        "noImplicitThis": true,
+
+
+        "noUnusedLocals": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true
+    },
+    "exclude": [
+      "node_modules",
+      "**/*.spec.ts"
+    ]
+}
