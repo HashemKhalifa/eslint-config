@@ -1,13 +1,15 @@
 {
-  "name": "lint-config",
+  "name": "@hashem/eslint-config",
   "version": "1.0.0",
   "description": "CLI to generate eslint, typescript config with prettier for react and nodejs",
-  "main": "src/index.js",
+  "main": "build/index.js",
   "bin": {
-    "lint-config": "src/index.js"
+    "lint-config": "build/index.js"
   },
   "scripts": {
-    "start": "node src/index.js"
+    "build": "babel src/ -d build ",
+    "start": "node src/index.js",
+    "prepublish": "npm run build"
   },
   "author": "Hashem Khalifa",
   "email": "<hashem.khalifa@gmail.com>",
@@ -17,23 +19,31 @@
     "tsconfig",
     "nodejs",
     "eslint",
+    "generate typescript config",
+    "generate eslint with react",
+    "generate eslint with typescript",
     "ts"
   ],
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+  "packageConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HashemKhalifa/linting-generator.git"
+    "url": "git+https://github.com/HashemKhalifa/eslint-config.git"
   },
   "bugs": {
-    "url": "https://github.com/HashemKhalifa/linting-generator/issues"
+    "url": "https://github.com/HashemKhalifa/eslint-config/issues"
   },
-  "homepage": "https://github.com/HashemKhalifa/linting-generator#readme",
+  "homepage": "https://github.com/HashemKhalifa/eslint-config#readme",
   "dependencies": {
     "inquirer": "^7.3.3",
     "shelljs": "0.8.4"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/core": "7.11.4",
+    "@babel/cli": "7.10.5",
+    "@babel/preset-env": "7.11.0"
+
+  }
 }
