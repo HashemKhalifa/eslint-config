@@ -1,10 +1,10 @@
 {
-  "name": "linting-generator",
+  "name": "lint-config",
   "version": "1.0.0",
   "description": "CLI to generate eslint, typescript config with prettier for react and nodejs",
   "main": "src/index.js",
   "bin": {
-    "linting-generator": "src/index.js"
+    "lint-config": "src/index.js"
   },
   "scripts": {
     "start": "node src/index.js"
@@ -12,6 +12,7 @@
   "author": "Hashem Khalifa",
   "email": "<hashem.khalifa@gmail.com>",
   "keywords": [
+    "lintconfig",
     "eslint",
     "tsconfig",
     "nodejs",
