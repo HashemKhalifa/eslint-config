@@ -1,6 +1,6 @@
 {
   "name": "linting.json",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI to generate eslint, typescript config with prettier for react and nodejs",
   "main": "build/index.min.js",
   "bin": "build/index.min.js",
