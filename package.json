@@ -1,11 +1,9 @@
 {
-  "name": "@hashem/eslint-config",
-  "version": "1.0.0",
+  "name": "linting.json",
+  "version": "1.0.1",
   "description": "CLI to generate eslint, typescript config with prettier for react and nodejs",
-  "main": "build/index.js",
-  "bin": {
-    "lint-config": "build/index.js"
-  },
+  "main": "build/index.min.js",
+  "bin": "build/index.min.js",
   "scripts": {
     "build": "babel src/ -d build ",
     "start": "node src/index.js",
@@ -41,9 +39,8 @@
     "shelljs": "0.8.4"
   },
   "devDependencies": {
-    "@babel/core": "7.11.4",
     "@babel/cli": "7.10.5",
+    "@babel/core": "7.11.4",
     "@babel/preset-env": "7.11.0"
-
   }
 }

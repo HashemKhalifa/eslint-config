@@ -3,11 +3,11 @@ const inquirer = require("inquirer");
 const { writeFileSync } = require("fs");
 const shell = require('shelljs');
 
-const reactAirbnbConfing = require("../config/react-with-airbnb-config.json");
-const tsLintConfig = require("../config/ts-eslint")
-const tsconfig = require("../config/ts-without-style-guide.json")
-const reactWithoutStyleGuid = require("../config/without-styleguide.json");
-const prettierConfig = require("../config/prettierrc.json");
+const reactAirbnbConfing = require("./config/react-with-airbnb-config.json");
+const tsLintConfig = require("./config/ts-eslint")
+const tsconfig = require("./config/ts-without-style-guide.json")
+const reactWithoutStyleGuid = require("./config/without-styleguide.json");
+const prettierConfig = require("./config/prettierrc.json");
 
 const eslintConfig = {
     "react-with-airbnb-config": JSON.stringify(reactAirbnbConfing),
