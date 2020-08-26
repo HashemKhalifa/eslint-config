@@ -2,9 +2,12 @@
 
 A CLI to generate Eslint configuration with or without style guide like airbnb or standardjs
 
+
 The config can be generated in React, Typescript and NodeJS
 
+
 In your project run `npx linting.json` and pick your favorite config.
+
 
 Let's pick React as an example
 ```javascript
