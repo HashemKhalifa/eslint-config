@@ -28,3 +28,5 @@ Pick the style guide
 @Todo
 - [ ] Add standard JS
 - [ ] Refactor the dependency installation
+
+Inspired by [tsconfig](https://github.com/benawad/tsconfig.json)
