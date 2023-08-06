@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/HashemKhalifa/eslint-config#readme",
   "dependencies": {
-    "inquirer": "^7.3.3",
+    "inquirer": "^9.0.0",
     "shelljs": "0.8.4"
   }
 }
